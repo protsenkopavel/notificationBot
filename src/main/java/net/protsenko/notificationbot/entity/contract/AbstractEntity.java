@@ -5,7 +5,7 @@ import lombok.Getter;
 
 import java.util.UUID;
 
-@Entity
+
 @Getter
 @MappedSuperclass
 public abstract class AbstractEntity {

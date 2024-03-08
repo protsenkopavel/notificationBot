@@ -28,6 +28,11 @@ dependencies {
     implementation("org.telegram:telegrambots:6.9.0")
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     implementation("org.postgresql:postgresql:42.7.1")
+    implementation("javax.xml.bind:jaxb-api:2.3.1")
+    implementation("jakarta.xml.bind:jakarta.xml.bind-api:3.0.1")
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    implementation("org.hibernate.validator:hibernate-validator:8.0.1.Final")
+
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
