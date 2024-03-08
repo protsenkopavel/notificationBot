@@ -1,9 +1,6 @@
 package net.protsenko.notificationbot.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import net.protsenko.notificationbot.entity.contract.AbstractEntity;
@@ -26,6 +23,9 @@ public class User extends AbstractEntity {
 
     @Column(name = "first_name", nullable = false)
     String firstName;
+
+    @Enumerated(EnumType.STRING)
+    Action action;
 
     @Column(name = "registered_at", nullable = false)
     LocalDateTime registeredAt;
