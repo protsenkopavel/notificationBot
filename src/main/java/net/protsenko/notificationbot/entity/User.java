@@ -7,6 +7,7 @@ import net.protsenko.notificationbot.entity.contract.AbstractEntity;
 
 import java.time.LocalDateTime;
 import java.util.Set;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -32,4 +33,7 @@ public class User extends AbstractEntity {
 
     @OneToMany
     Set<Notification> notifications;
+
+    @Column(name = "current_notification_id")
+    UUID currentNotification;
 }

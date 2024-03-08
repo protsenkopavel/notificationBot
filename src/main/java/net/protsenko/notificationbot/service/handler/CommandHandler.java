@@ -24,7 +24,7 @@ public class CommandHandler extends AbstractHandler {
         var message = (Message) object;
 
         if ("/start".equals(message.getText())) {
-            mainManager.answerCommand(message, bot);
+            return mainManager.answerCommand(message, bot);
         }
 
         throw new UnsupportedOperationException();
